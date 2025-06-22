@@ -1,0 +1,65 @@
+# 🛠 SUterminale Hoşgeldin.
+
+Bu proje, siber güvenlik alanında kullanılan en yaygın bilgi toplama, brute-force, analiz ve çözümleme araçlarını Python ile terminal tabanlı bir menü üzerinden kolayca erişilebilir hale getirmeyi amaçlar.
+
+---
+
+## 👤 Geliştirici
+**Serdar Umut Turan**
+
+---
+
+## 🎯 Amaç
+Bu araç, CTF yarışmaları, laboratuvar ortamları ve temel sızma testi senaryolarında en sık kullanılan güvenlik araçlarını kategorik olarak sunar. Tek bir arayüzden hızlı kullanım sağlar.
+
+---
+
+## 📂 Proje Yapısı
+
+CyberTools/
+├── app.py # Ana uygulama
+├── src/
+│ ├── component/ # Modüller
+│ │ ├── nmap.py # Port tarama
+│ │ ├── gobuster.py # Dizin keşfi
+│ │ ├── hydra.py # Brute-force saldırı
+│ │ ├── firewall.py # WAF tespiti
+│ │ ├── file.py # Binwalk dosya analizi
+│ │ ├── macchanger.py # MAC adresi değiştirme
+│ │ ├── kriptoloji.py # Encode/decode analiz
+│ │ └── utils.py # Ortak yardımcı fonksiyon
+│ └── wordlist/ # Wordlist dosyaları
+│ ├── rockyou.txt
+│ ├── common.txt
+│ └── ...
+└── README.md # Bu döküman
+
+
+İçerdiği Modüller
+Modül	Açıklama
+Nmap	Port tarama, servis ve OS tespiti
+Gobuster	Dizin brute-force (web keşfi)
+Hydra	SSH, FTP, HTTP şifre denemesi
+Firewall	WAF tespiti (wafw00f)
+File	Gömülü veri/dosya analizi (binwalk)
+MAC Changer	MAC adresi değiştirme işlemleri
+Kriptoloji	Base64, ROT13, XOR, hash vs. çözüm
+
+
+Gereksinimler
+Python 3.10+
+Kali Linux (veya benzeri Linux sistem)
+
+Aşağıdaki araçların sistemde kurulu olması gerekir:
+nmap
+gobuster
+hydra
+wafw00f
+binwalk
+macchanger
+
+Eksikse terminalden sudo apt install nmap gobuster hydra wafw00f binwalk macchanger ile kurabilirsin.
+
+
+CTF yarışmalarında zamana karşı yarışırken hızlı aksiyon almak isteyenler için pratik bir yardımcı araç setidir. Terminal yolculuğunda başarılar.
+
